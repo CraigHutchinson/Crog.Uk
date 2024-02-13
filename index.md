@@ -10,6 +10,7 @@ Criteria:
 -  EN 14511 Average Climate
 
 ** = models may underperform due to cycling as these models are 8KW+
+
 () = Order by 45C or MEAN(35,55) when not available (this produces conservative underestimate of SCOP when unavailable)
 
 | Make/Model          | SCOP@35C | SCOP@45C | SCOP@55C | Gas  | Comment |
