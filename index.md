@@ -19,9 +19,9 @@ Criteria:
 | Make/Model              | SCOP@35C | SCOP@45C | SCOP@55C | Gas  | Comment              | Site/Datasheet |
 | ----------------------: | :------- | :------- | :------- | ---: | -------              | --- |
 | Ovum AC208P **          | 5.78     |          | 4.15     | R290 |                      | [site](https://www.ovum.at/en/produkte/luft-die-koenigsklasse/) [datasheet](https://www.ovum.at/wp-content/uploads/2023/10/ACP_Datenblatt_alle_Web_230928.pdf) |
-| Lambda 8Kw **           | 5.66     |          | 4.48     | R290 |                      | [size](https://lambda-wp.at/luft-waermepumpen/) [datasheet](https://assets-global.website-files.com/643186efcbc3b72e2a4f6db8/65acf5477b9a14bfd7615549_Scheda%20Tecnica.pdf)|
+| Lambda 8Kw **           | 5.66     |          | 4.48     | R290 |                      | [site](https://lambda-wp.at/luft-waermepumpen/) [datasheet](https://assets-global.website-files.com/643186efcbc3b72e2a4f6db8/65acf5477b9a14bfd7615549_Scheda%20Tecnica.pdf)|
 | EBac 5Kw                | 5.11     |  4.73    | 4.12     | R32  |                      | [datasheet](https://ebac-serverless.files.svdcdn.com/production/default/EBA%E2%80%A2230341_AIR-SOURCE-HEAT-PUMP-E-BROCHURE_HOT-WATER-CYLINDER.pdf?dm=1695277753) |
-| LG Therma V 9Kw **      | 5.23     | (4.49)   | 3.75     | R290 |                      | [datasheet](file:///C:/Users/craighutchinson/Downloads/THERMA%20V%20(AWHP)%20R290%20Monobloc%20Hydro%20Unit%208P%20%20leaflet_web_Holo_O_1117_low.pdf) |
+| LG Therma V 9Kw **      | 5.23     | (4.49)   | 3.75     | R290 |                      | [datasheet](https://www.lg.com/global/business/download/airsolution/THERMA%20V%20(AWHP)%20R290%20Monobloc%20Hydro%20Unit%208P%20%20leaflet_web_Holo_O_1117_low[20240130_154102737].pdf) |
 | Ideal 5Kw               | 5.07     |          | 3.65     | R32  |                      | [site](https://idealtouch.co.uk.idealboilers.com/products/logic-air-heat-pump-3) |
 | Nibe 6kw **             | 5.08     |          | 3.58     | R32  |                      | [site](https://assetstore.nibe.se/hcms/v2.3/entity/document/874828/storage/ODc0ODI4LzAvbWFzdGVy) |
 | Bosch 5800i 5Kw         | 4.65     |          | 3.50     | R290 |                      | [site](https://www.worcester-bosch.co.uk/products/heat-pumps/directory/compress-5800i-aw) |
