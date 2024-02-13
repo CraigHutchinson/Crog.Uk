@@ -1,5 +1,3 @@
-# CrogUK
-
 Hi, this is my space for Heat Pump selection and analisys while I take on the move to go low-carbon in my 1930s detatched house in the south of England, UK.
 
 This is very much WIP and a selection of notes so far...
