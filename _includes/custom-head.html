@@ -1,0 +1,26 @@
+
+{% if page.datatable == true %}
+<!-- Include the standard DataTables bits -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/2.0.0/css/dataTables.dataTables.min.css">
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/2.0.0/js/dataTables.min.js"></script>
+<!-- First, this walks through the tables that occur between ...-begin
+	 and ...-end and add the "datatable" class to them.
+	 Then it invokes DataTable's standard initializer
+	 Credit here: http://www.beardedhacker.com/blog/2015/08/28/add-class-attribute-to-markdown-table/
+	 https://datatables.net/reference/option/
+  -->
+<script>
+  $(document).ready(function(){
+	  $('div.datatable-begin').nextUntil('div.datatable-end', 'table').addClass('display');
+	  $('table.display').DataTable( {
+		  paging: true,
+		  pageLength: 25,
+		  stateSave: false,
+		  searching: true,
+		  order: []
+	  });
+   });
+</script>
+
+{% endif %}

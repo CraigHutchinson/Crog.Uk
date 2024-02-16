@@ -1,26 +1,22 @@
 ---
 layout: post
-title:  "5Kw Heat Pump SCOP (EN 14511)"
+title:  "Comparison of 5Kw Heat Pumps"
 date:   2024-02-15 11:14:02 +0000
-categories: Heat Pump
+categories: HeatPump
+datatable: true
+pinned: true
 ---
 
-I've been collating all the heat-pump SCOP (Seasonal Coefficient Of Performance) figures for models I am aware of.
 
-TODO: EN-14825 replaced by EN-14511 ??
-* EBac EN-14825 to now EN-14511 reduced from 5.11 to 4.91 @35C, 4.73 to 4.63 @ 45C, 4.12 to 3.96 @ 55C [old-datasheet](https://ebac-serverless.files.svdcdn.com/production/default/EBA%E2%80%A2230341_AIR-SOURCE-HEAT-PUMP-E-BROCHURE_HOT-WATER-CYLINDER.pdf?dm=1695277753)
+This is a comparison table of all 2024-2025 heat-pump datasheet figures for make+models I am aware of.
 
 Criteria:
 - Target property 4-5Kw
 - EN 14511 Average Climate
 - Ordered by SCOP where higher is better. Where order is ambiguous the SCOP at 45C is used.
 
-** = models may underperform due to cycling as these models are 8KW+
 
-() = SCOP at 45C calculated as MEAN(35,55) when not made available in datasheet.
- This produces conservative underestimate of SCOP when unavailable.
-
- !! SCOP standard OLD or NOT-DEFINED - results may be of question
+<div class="datatable-begin"></div>
 
 | Make/Model              | SCOP-Standard | SCOP@35C | SCOP@45C | SCOP@55C | Gas  | Comment              | Specification Date | Site/Datasheet |
 | ----------------------: | ------------- | :------- | :------- | :------- | ---: | -------              | ------------------ | --- |
@@ -37,4 +33,14 @@ Criteria:
 | Baxi  5Kw               | {todo}        | 4.77     |  4.06    | 3.39     | R32  |                      | {todo}             | [site](https://www.baxi.co.uk/new-build/products/air-source-heat-pumps/baxi-assure-hp50-ashp) |
 | Daikin Altherma 4Kw     | {todo}        | 4.48     | (3.87)   | 3.26     | R32  |                      | {todo}             | [site](https://www.daikin.co.uk/en_gb/products/product.table.html/EDLA04-08E3V3.html) |
 | Vaillant aroTherm+ 5Kw  | EN-14511      | 4.48     |  3.77    | 3.06     | R290 |                      | {todo}             | [datasheet](https://professional.vaillant.co.uk/downloads/aproducts/renewables-1/arotherm-plus/arotherm-plus-spec-sheet-1892564.pdf) |
+
+<div class="datatable-end"></div>
+
+
+> ** = models may underperform due to cycling as these models are 8KW+
+> 
+> () = SCOP at 45C calculated as MEAN(35,55) when not made available in datasheet.
+>       This produces conservative underestimate of SCOP when unavailable.
+> 
+> !! = SCOP standard OLD or NOT-DEFINED - results may be of question
 

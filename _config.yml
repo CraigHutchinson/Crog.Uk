@@ -24,16 +24,22 @@ description: >-
   CROG is about Carbon Reduction and Ongoing Greening of our energy usage
   to reduce costs and environmental impact.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://crog.uk" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: CrogUk
-github_username:  CrogUk
+github_username:  CraigHutchinson
 
 # Build settings
-#remote_theme: pages-themes/minimal
-theme: minima
+remote_theme: jekyll/minima
+# pages-themes/minimal
+#theme: minima
 plugins:
   - jekyll-remote-theme 
   - jekyll-feed
+
+collections:
+  heat_pumps:
+    output: true
+    permalink: /heat_pumps/:path/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -54,3 +60,11 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  
+show_excerpts: true
