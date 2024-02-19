@@ -23,8 +23,8 @@ Criteria:
 | ----------------------: | ------------- | :------- | :------- | :------- | ---: | -------------------- | ------------------ | -------------- |
 | `Lambda 8Kw`            | EN-14511      | 5.66     | `5.07`   | 4.48     | R290 |                      | 2024-01            | [site](https://lambda-wp.at/luft-waermepumpen/) [datasheet](https://www.ovum.at/wp-content/uploads/2024/02/ACP_Datenblatt_alle_web_240206.pdf)|
 | `Ovum AC208P`           | EN-14825      | 5.53     | `4.77`   | 4.00     | R290 |                      | 2024-02            | [site](https://www.ovum.at/en/produkte/luft-die-koenigsklasse/) [datasheet](https://www.ovum.at/wp-content/uploads/2023/10/ACP_Datenblatt_alle_Web_230928.pdf) |
-| EBac H1A05WG-GB 5Kw     | EN-14511      | 4.91     |  4.63    | 3.96     | R32  |                      | 2024-02            | [datasheet](https://files.ebac.com/production/default/EBA%E2%80%A2240014_HEATPUMP-DATASHEET_QR_LR_2024-02-10-072606_tqkz.pdf?dm=1707549967) |
 | `LG Therma V 9Kw`       | `NOT-DEFINED` | 5.23     | `4.49`   | 3.75     | R290 |                      | 2024-01            | [datasheet](https://www.lg.com/global/business/download/airsolution/THERMA%20V%20(AWHP)%20R290%20Monobloc%20Hydro%20Unit%208P%20%20leaflet_web_Holo_O_1117_low[20240130_154102737].pdf) |
+| EBac H1A05WG-GB 5Kw     | EN-14511      | 4.91     |  4.38    | 3.96     | R32  |                      | 2024-02            | [datasheet](https://files.ebac.com/production/default/EBA%E2%80%A2240014_HEATPUMP-DATASHEET_QR_LR_2024-02-10-072606_tqkz.pdf?dm=1707549967) |
 | Ideal 5Kw               | EN-14825      | 5.07     | `4.36`   | 3.65     | R32  |                      | 2023-06            | [site](https://idealtouch.co.uk.idealboilers.com/products/logic-air-heat-pump-3) |
 | Nibe 6kw                | EN-14825      | 5.08     | `4.33`   | 3.58     | R32  |                      | {todo}             | [datasheet](https://assetstore.nibe.se/hcms/v2.3/entity/document/874828/storage/ODc0ODI4LzAvbWFzdGVy) |
 | Bosch 5800i 5Kw         | {todo}        | 4.65     | `4.08`   | 3.50     | R290 | {todo} Data source!? | {todo}             | [site](https://www.worcester-bosch.co.uk/products/heat-pumps/directory/compress-5800i-aw)  |
@@ -42,9 +42,9 @@ Criteria:
 ><sup id="k_45">3</sup>```1.23``` = SCOP at 45C calculated as MEAN(35,55) when not made available in datasheet.
 >      This produces conservative underestimate of SCOP when unavailable.
 
-
 <div class="datatable-end"></div>
 
 Changes:
+- Fix data-entry error on Ebac 45C 4.63 to 4.38 (down to 4th)
 - 2024-02 Ovum AC208P from `5.78` to `5.66` @ 35C, `4.15` to `4.00` @ 55C etc. [old-datasheet](https://assets-global.website-files.com/643186efcbc3b72e2a4f6db8/65acf5477b9a14bfd7615549_Scheda%20Tecnica.pdf)
 - 2024-02 EBac H1A05WG-GB from `5.11` to `4.91` @ 35C, `4.12` to `3.96` @ 55C  [old-datasheet](https://ebac-serverless.files.svdcdn.com/production/default/EBA%E2%80%A2230341_AIR-SOURCE-HEAT-PUMP-E-BROCHURE_HOT-WATER-CYLINDER.pdf?dm=1695277753) 
