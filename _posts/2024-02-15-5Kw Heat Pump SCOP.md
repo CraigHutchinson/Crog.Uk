@@ -5,7 +5,7 @@ date:   2024-02-15 11:14:02 +0000
 modified_date: 2024-02-19 10:30:00 +0000
 categories: HeatPump
 datatable: true
-pinned: true
+pinned: false
 ---
 
 This is a comparison table of all 2024-2025 heat-pump datasheet figures for make+models I am aware of.
