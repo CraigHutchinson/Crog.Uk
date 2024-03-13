@@ -39,6 +39,7 @@ remote_theme: jekyll/minima
 plugins:
   - jekyll-remote-theme 
   - jekyll-feed
+  - jekyll-target-blank
 
 collections:
   heat_pumps:
@@ -72,8 +73,7 @@ exclude:
   - LICENSE
   
 show_excerpts: true
-
-
+  
 # Theme-specific settings
 
 # If you want to link only specific pages in your header, use this and add the path to the pages
