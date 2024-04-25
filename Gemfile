@@ -35,3 +35,6 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # All external links should open in a new tab
 gem "jekyll-target-blank"
+
+# Emojis
+gem "jemoji"
