@@ -2,7 +2,7 @@
 layout: post
 title:  "Comparison of 5Kw Heat Pumps"
 date:   2024-02-15 11:14:02 +0000
-modified_date: 2024-02-19 10:30:00 +0000
+modified_date: 2024-04-25 08:18:00 +0000
 categories: HeatPump
 datatable: true
 pinned: false
@@ -30,10 +30,12 @@ Criteria:
 | Bosch 5800i 5Kw         | {todo}        | 4.65     | `4.08`   | 3.50     | R290 | {todo} Data source!? | {todo}             | [site](https://www.worcester-bosch.co.uk/products/heat-pumps/directory/compress-5800i-aw)  |
 | Samsung Gen7 5Kw        | {todo}        | 4.84     |  4.14    | 3.42     | R290 |                      | {todo}             | [datasheet](https://midsummerwholesale.co.uk/pdfs/samsung-gen-7-r290-datasheet.pdf) |
 | Viessmann 151.A06       | {todo}        | 4.58     | `4.10`   | 3.61     | R290 |                      | {todo}             | [datasheet](https://viessmanndirect.co.uk/files//7a81a248-e65a-4fcf-8735-e4a33fa33fe4/Energy%20Consumption%20Datasheet.pdf) |
+| Aira 6KW 1.0            | {MCS}         | 4.62     |  4.10    | 3.58     | R290 | MCS data `HP0372/06` | 2024-03            | [datasheet](https://cms-assets.prod.airahome.com/Installation_Manual_Aira_Outdoor_Unit_Rev1_1_UK_0dbf6a3a3c.pdf) |
 | Mitsubishi Ecodan       | {todo}        | 4.62     | `4.08`   | 3.53     | R290 |                      | {todo}             | [site](https://library.mitsubishielectric.co.uk/pdf/book/EcodanR290Outdoor1#page-1) |
 | Baxi  5Kw               | {todo}        | 4.77     |  4.06    | 3.39     | R32  |                      | {todo}             | [site](https://www.baxi.co.uk/new-build/products/air-source-heat-pumps/baxi-assure-hp50-ashp) |
 | Daikin Altherma 4Kw     | {todo}        | 4.48     | `3.87`   | 3.26     | R32  |                      | {todo}             | [site](https://www.daikin.co.uk/en_gb/products/product.table.html/EDLA04-08E3V3.html) |
 | Vaillant aroTherm+ 5Kw  | EN-14511      | 4.48     |  3.77    | 3.06     | R290 |                      | {todo}             | [datasheet](https://professional.vaillant.co.uk/downloads/aproducts/renewables-1/arotherm-plus/arotherm-plus-spec-sheet-1892564.pdf) |
+
 
 ><sup id="k_make">1</sup>`Make/Model` = models may cycle due to being oversized i.e. 8KW+
 >
@@ -48,3 +50,4 @@ Changes:
 - Fix data-entry error on Ebac 45C 4.63 to 4.38 (down to 4th)
 - 2024-02 Ovum AC208P from `5.78` to `5.53` @ 35C, `4.15` to `4.00` @ 55C etc. [old-datasheet](https://www.ovum.at/wp-content/uploads/2023/10/ACP_Datenblatt_alle_Web_230928.pdf)
 - 2024-02 EBac H1A05WG-GB from `5.11` to `4.91` @ 35C, `4.12` to `3.96` @ 55C  [old-datasheet](https://ebac-serverless.files.svdcdn.com/production/default/EBA%E2%80%A2230341_AIR-SOURCE-HEAT-PUMP-E-BROCHURE_HOT-WATER-CYLINDER.pdf?dm=1695277753) 
+- 2024-04-25 Added Aira 6KW 1.0 with SCOP figures from MCS Product Database
