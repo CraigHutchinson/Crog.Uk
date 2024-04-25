@@ -13,7 +13,7 @@ This is a comparison table of all 2024-2025 heat-pump datasheet figures for make
 Criteria:
 - Target property 4-5Kw
 - EN 14511/14825 (?) Average Climate and Low temperature = 35C and Medium = 55C
-- Ordered by SCOP where higher is better. Where order is ambiguous the SCOP at 45C is used.
+- Ordered by SCOP where higher is better. Where order is ambiguous the SCOP at 45C is used, and then 35C i.e. We prefer mild weather performance which gives greater yearly SCOP.
 
 
 <div class="datatable-begin"></div>
@@ -29,8 +29,8 @@ Criteria:
 | Nibe 6kw                | EN-14825      | 5.08     | `4.33`   | 3.58     | R32  |                      | {todo}             | [datasheet](https://assetstore.nibe.se/hcms/v2.3/entity/document/874828/storage/ODc0ODI4LzAvbWFzdGVy) |
 | Bosch 5800i 5Kw         | {todo}        | 4.65     | `4.08`   | 3.50     | R290 | {todo} Data source!? | {todo}             | [site](https://www.worcester-bosch.co.uk/products/heat-pumps/directory/compress-5800i-aw)  |
 | Samsung Gen7 5Kw        | {todo}        | 4.84     |  4.14    | 3.42     | R290 |                      | {todo}             | [datasheet](https://midsummerwholesale.co.uk/pdfs/samsung-gen-7-r290-datasheet.pdf) |
-| Viessmann 151.A06       | {todo}        | 4.58     | `4.10`   | 3.61     | R290 |                      | {todo}             | [datasheet](https://viessmanndirect.co.uk/files//7a81a248-e65a-4fcf-8735-e4a33fa33fe4/Energy%20Consumption%20Datasheet.pdf) |
 | Aira 6KW 1.0            | {MCS}         | 4.62     |  4.10    | 3.58     | R290 | MCS data `HP0372/06` | 2024-03            | [datasheet](https://cms-assets.prod.airahome.com/Installation_Manual_Aira_Outdoor_Unit_Rev1_1_UK_0dbf6a3a3c.pdf) |
+| Viessmann 151.A06       | {todo}        | 4.58     | `4.10`   | 3.61     | R290 |                      | {todo}             | [datasheet](https://viessmanndirect.co.uk/files//7a81a248-e65a-4fcf-8735-e4a33fa33fe4/Energy%20Consumption%20Datasheet.pdf) |
 | Mitsubishi Ecodan       | {todo}        | 4.62     | `4.08`   | 3.53     | R290 |                      | {todo}             | [site](https://library.mitsubishielectric.co.uk/pdf/book/EcodanR290Outdoor1#page-1) |
 | Baxi  5Kw               | {todo}        | 4.77     |  4.06    | 3.39     | R32  |                      | {todo}             | [site](https://www.baxi.co.uk/new-build/products/air-source-heat-pumps/baxi-assure-hp50-ashp) |
 | Daikin Altherma 4Kw     | {todo}        | 4.48     | `3.87`   | 3.26     | R32  |                      | {todo}             | [site](https://www.daikin.co.uk/en_gb/products/product.table.html/EDLA04-08E3V3.html) |
