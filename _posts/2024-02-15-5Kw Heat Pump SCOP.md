@@ -15,6 +15,8 @@ Criteria:
 - EN 14511/14825 (?) Average Climate and Low temperature = 35C and Medium = 55C
 - Ordered by SCOP where higher is better. Where order is ambiguous the SCOP at 45C is used, and then 35C i.e. We prefer mild weather performance which gives greater yearly SCOP.
 
+All SCOP figures are now correlated (i.e. replaced) with MCS 3rd party certified figures where possible. 
+Please be aware :broken_heart: currently indicates a device that has not got a verified performance and may not be correctly ranked among others.
 
 <div class="datatable-begin"></div>
 
