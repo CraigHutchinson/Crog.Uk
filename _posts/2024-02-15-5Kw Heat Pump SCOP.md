@@ -47,6 +47,7 @@ Please be aware :broken_heart: currently indicates a device that has not got a v
 >
 ><sup id="k_45">3</sup>```1.23``` = SCOP at 45C calculated as MEAN(35,55) when not made available in datasheet.
 >      This produces conservative underestimate of SCOP when unavailable.
+>
 ><sup id="k_wall">4</sup>Only if directly shown in datasheet, many, if not all could be wall mounted, but not directly mentioned in datasheet.
 
 <div class="datatable-end"></div>
