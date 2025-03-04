@@ -2,7 +2,7 @@
 layout: post
 title:  "Comparison of 5Kw Heat Pumps"
 date:   2024-02-15 11:14:02 +0000
-modified_date: 2024-06-10 13:05:00 +0000
+modified_date: 2025-03-04 10:52:00 +0000
 categories: HeatPump
 datatable: true
 pinned: false
@@ -39,7 +39,7 @@ Please be aware :broken_heart: currently indicates a device that has not got a v
 | Vaillant aroTherm+ 5Kw  | 4.48     | 3.77     | 3.06     | R290 | :gem: `KIWA 00016/018HP`                                                    | 51-55                   | {todo}     | :+1:       | [datasheet](https://professional.vaillant.co.uk/downloads/aproducts/renewables-1/arotherm-plus/arotherm-plus-spec-sheet-1892564.pdf) |
 | Daikin Altherma 4Kw     | 4.43     | 3.72     | 3.20     | R32  | :green_book: MCS `011-1W0527_3` over Datasheet(4.48,`3.87`,3.26)            | 60                      | {todo}     |            | [site](https://www.daikin.co.uk/en_gb/products/product.table.html/EDLA04-08E3V3.html) |
 | Octopus Cosy 6          | 3.98     | 3.36     | 3.06     | R290 | :green_book: `MCS HP0255/03`                                                | 53.8                    | 2024-05    | :x:        | [datsheet](https://26119526.fs1.hubspotusercontent-eu1.net/hubfs/26119526/Cosy%206-overview-vol%201.pdf). MCS database source https://mcscertified.com/product-directory/ |
-
+| Wonderwall DR-HP-006-UK | ????     | ????     | ????     | R290 | :broken_heart: No MCS cert or data of any SCOP kind as of 2024-03            | 60                      | 2024-03    |            | [datsheet](https://wondrwall.com/wp-content/uploads/2024/11/WW-Air-Source-Heat-Pump-Datasheet.pdf). |
 
 ><sup id="k_make">1</sup>`Make/Model` = models may cycle due to being oversized i.e. 8KW+
 >
@@ -61,3 +61,4 @@ Changes:
 - 2024-06-10 Remove inconsistent standard in favour of 3rd party MCS correlation for SCOP accuracy, devices re-ordered respectively
 - 2024-12-11 Added Sound Power LEvel (dBa) + add `Stiebel Eltron`
 - 2024-12-12 Added MCS figures for `Bosch CS5800iAW  5Kw` and `LG Therma V 9Kw`
+- 2025-03 Preliminary entry of Wonderwall DR-HP-006-UK
