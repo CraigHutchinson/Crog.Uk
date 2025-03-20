@@ -52,6 +52,9 @@ Please be aware :broken_heart: currently indicates a device that has not got a v
 
 <div class="datatable-end"></div>
 
+ToDo:
+- Add CTC Ecoair 700M https://ctc-heating.com/products/air-to-water-heat-pumps/ctc-ecoair-700m
+
 Changes:
 - Fix data-entry error on Ebac 45C 4.63 to 4.38 (down to 4th)
 - 2024-02 Ovum AC208P from `5.78` to `5.53` @ 35C, `4.15` to `4.00` @ 55C etc. [old-datasheet](https://www.ovum.at/wp-content/uploads/2023/10/ACP_Datenblatt_alle_Web_230928.pdf)
