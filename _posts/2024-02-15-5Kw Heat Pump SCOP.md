@@ -39,7 +39,8 @@ Please be aware :broken_heart: currently indicates a device that has not got a v
 | Vaillant aroTherm+ 5Kw  | 4.48     | 3.77     | 3.06     | R290 | :gem: `KIWA 00016/018HP`                                                    | 51-55                   | {todo}     | :+1:       | [datasheet](https://professional.vaillant.co.uk/downloads/aproducts/renewables-1/arotherm-plus/arotherm-plus-spec-sheet-1892564.pdf) |
 | Daikin Altherma 4Kw     | 4.43     | 3.72     | 3.20     | R32  | :green_book: MCS `011-1W0527_3` over Datasheet(4.48,`3.87`,3.26)            | 60                      | {todo}     |            | [site](https://www.daikin.co.uk/en_gb/products/product.table.html/EDLA04-08E3V3.html) |
 | Octopus Cosy 6          | 3.98     | 3.36     | 3.06     | R290 | :green_book: `MCS HP0255/03`                                                | 53.8                    | 2024-05    | :x:        | [datsheet](https://26119526.fs1.hubspotusercontent-eu1.net/hubfs/26119526/Cosy%206-overview-vol%201.pdf). MCS database source https://mcscertified.com/product-directory/ |
-| Wonderwall DR-HP-006-UK | ????     | ????     | ????     | R290 | :broken_heart: No MCS cert or data of any SCOP kind as of 2024-03            | 60                      | 2024-03    |            | [datsheet](https://wondrwall.com/wp-content/uploads/2024/11/WW-Air-Source-Heat-Pump-Datasheet.pdf). |
+| CTC Ecoair 700M         | ????     | ????     | ????     | R290 | :broken_heart: No MCS cert or data of any SCOP kind as of 2024-03           | 46                      | 2024-03    |            | [site](https://ctc-heating.com/products/air-to-water-heat-pumps/ctc-ecoair-700m). |
+| Wonderwall DR-HP-006-UK | ????     | ????     | ????     | R290 | :broken_heart: No MCS cert or data of any SCOP kind as of 2024-03           | 60                      | 2024-03    |            | [datsheet](https://wondrwall.com/wp-content/uploads/2024/11/WW-Air-Source-Heat-Pump-Datasheet.pdf). |
 
 ><sup id="k_make">1</sup>`Make/Model` = models may cycle due to being oversized i.e. 8KW+
 >
@@ -53,6 +54,7 @@ Please be aware :broken_heart: currently indicates a device that has not got a v
 <div class="datatable-end"></div>
 
 ToDo:
+- Add Wonderwall DR-HP-006-UK  https://wondrwall.com/products/air-source-heat-pump/#technical-specifications
 - Add CTC Ecoair 700M https://ctc-heating.com/products/air-to-water-heat-pumps/ctc-ecoair-700m
 
 Changes:
