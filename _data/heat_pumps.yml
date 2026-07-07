@@ -509,6 +509,28 @@
     mcs: null
   comment: "R290 monobloc; SCOP to verify (not surfaced by MCS API)."
 
+- manufacturer: Warmflow
+  model: Zeno R290
+  output_kw: 6
+  refrigerant: R290
+  scop_35: null
+  scop_45: null
+  scop_55: null
+  scop_45_estimated: false
+  validation: broken_heart
+  status: rumoured
+  mcs_cert: null
+  mcs_search: "Zeno"
+  sound_power_dba: null
+  wall_mount: false
+  date_valid: null
+  links:
+    site: https://www.warmflow.co.uk/
+    datasheet: null
+    brochure: null
+    mcs: null
+  comment: "UK R290 monobloc range; SCOP to verify (not surfaced by MCS API)."
+
 - manufacturer: CTC
   model: Ecoair 700M
   output_kw: 7
