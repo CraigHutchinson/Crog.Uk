@@ -369,32 +369,11 @@
   wall_mount: true
   date_valid: null
   links:
-    site: null
+    site: https://www.myvaillantpro.co.uk/products/product-overview/heat-pumps/arothermplus
     datasheet: https://professional.vaillant.co.uk/downloads/aproducts/renewables-1/arotherm-plus/arotherm-plus-spec-sheet-1892564.pdf
     brochure: null
     mcs: null
-  comment: "Datasheet matches MCS."
-
-- manufacturer: Vaillant
-  model: aroTHERM plus 2025/26 (VWL ../6 A)
-  output_kw: 5
-  refrigerant: R290
-  scop_35: null
-  scop_45: null
-  scop_55: null
-  scop_45_estimated: false
-  validation: broken_heart
-  status: rumoured
-  mcs_cert: null
-  sound_power_dba: null
-  wall_mount: true
-  date_valid: null
-  links:
-    site: null
-    datasheet: null
-    brochure: null
-    mcs: https://mcscertified.com/product-directory/
-  comment: "Refreshed 2025/26 aroTHERM plus generation announced for UK with improved specs; awaiting verified MCS SCOP figures before ranking."
+  comment: "Current R290 aroTHERM plus range (VWL ../6 A); datasheet matches MCS."
 
 - manufacturer: Daikin
   model: Altherma 4kW
@@ -482,10 +461,10 @@
   date_valid: null
   links:
     site: https://www.grantuk.com/products/air-source-heat-pumps/
-    datasheet: null
+    datasheet: https://www.grantuk.com/media/6164/aerona-290-data-sheet_v4-lr.pdf
     brochure: null
     mcs: null
-  comment: "New R290 range; MCS-listed under 'Aerona' but SCOP not yet captured - verify figures."
+  comment: "New R290 range; datasheet publishes COP (A7/W35 etc.) not SCOP@35/45/55, and no MCS SCOP surfaced yet - SCOP trio unavailable."
 
 - manufacturer: Panasonic
   model: Aquarea R290 (5kW)

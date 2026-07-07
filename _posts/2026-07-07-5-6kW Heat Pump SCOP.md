@@ -25,6 +25,9 @@ Criteria / methodology (unchanged from the [2024 table]({% post_url 2024-02-15-5
   (we prefer mild-weather performance which gives greater yearly SCOP).
 - **MCS Product Database figures are the source of truth** and replace datasheet figures where they
   differ &mdash; see [MCS Product Directory](https://mcscertified.com/product-directory/).
+- Where a model has **no MCS certification**, published manufacturer/datasheet figures are used
+  instead and flagged &#128148; (unverified). Note many manufacturers publish only **COP**, not the
+  SCOP@35/45/55 trio, so some newly launched models show no SCOP until they are MCS-certified.
 - A `*` on SCOP@45&deg;C means it was estimated as mean(35,55) because the datasheet omitted it
   (a conservative underestimate).
 
