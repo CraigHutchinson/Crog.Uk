@@ -443,6 +443,72 @@
     mcs: https://mcscertified.com/product-directory/
   comment: "MCS source figures."
 
+- manufacturer: Ecoforest
+  model: ecoAIR+ 230 (6-24kW)
+  output_kw: 6
+  refrigerant: R290
+  scop_35: 4.38
+  scop_45: 3.49
+  scop_55: 3.11
+  scop_45_estimated: false
+  validation: green_book
+  status: mcs
+  mcs_cert: "011-1W0921_6"
+  mcs_search: "ecoAIR"
+  sound_power_dba: null
+  wall_mount: false
+  date_valid: "2024-10"
+  links:
+    site: https://ecoforest.com/en/
+    datasheet: null
+    brochure: null
+    mcs: null
+  comment: "Modulating 6-24kW unit; MCS source figures (011-1W0921)."
+
+- manufacturer: Grant
+  model: Aerona 290 (R290)
+  output_kw: 6
+  refrigerant: R290
+  scop_35: null
+  scop_45: null
+  scop_55: null
+  scop_45_estimated: false
+  validation: broken_heart
+  status: rumoured
+  mcs_cert: null
+  mcs_search: "Aerona"
+  sound_power_dba: null
+  wall_mount: false
+  date_valid: null
+  links:
+    site: https://www.grantuk.com/products/air-source-heat-pumps/
+    datasheet: null
+    brochure: null
+    mcs: null
+  comment: "New R290 range; MCS-listed under 'Aerona' but SCOP not yet captured - verify figures."
+
+- manufacturer: Panasonic
+  model: Aquarea R290 (5kW)
+  output_kw: 5
+  refrigerant: R290
+  scop_35: null
+  scop_45: null
+  scop_55: null
+  scop_45_estimated: false
+  validation: broken_heart
+  status: rumoured
+  mcs_cert: null
+  mcs_search: "Aquarea"
+  sound_power_dba: null
+  wall_mount: false
+  date_valid: null
+  links:
+    site: https://www.aircon.panasonic.eu/GB_en/
+    datasheet: null
+    brochure: null
+    mcs: null
+  comment: "R290 monobloc; SCOP to verify (not surfaced by MCS API)."
+
 - manufacturer: CTC
   model: Ecoair 700M
   output_kw: 7
