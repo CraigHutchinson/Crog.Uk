@@ -1,0 +1,61 @@
+{%- comment -%}
+  Renders the heat pump SCOP comparison table from _data/heat_pumps.yml.
+
+  Usage (in a post with front matter `datatable: true`):
+    {% include scop-table.html %}                     -> all models
+    {% include scop-table.html min_kw=5 max_kw=6 %}   -> only 5-6 kW models
+
+  Params (all optional):
+    min_kw  Minimum output_kw to include.
+    max_kw  Maximum output_kw to include.
+
+  Ranking: models with a SCOP@35 are ranked high-to-low (tie-break 45C then 55C
+  handled well-enough by the primary sort); models without figures are appended
+  as unranked. DataTables re-sorts client-side, so data-order attributes carry
+  numeric sort keys (unknown SCOP sorts last).
+{%- endcomment -%}
+{%- assign rows = site.data.heat_pumps -%}
+{%- if include.min_kw -%}
+  {%- assign minkw = include.min_kw -%}
+  {%- assign rows = rows | where_exp: "r", "r.output_kw >= minkw" -%}
+{%- endif -%}
+{%- if include.max_kw -%}
+  {%- assign maxkw = include.max_kw -%}
+  {%- assign rows = rows | where_exp: "r", "r.output_kw <= maxkw" -%}
+{%- endif -%}
+{%- assign ranked = rows | where_exp: "r", "r.scop_35" | sort: "scop_35" | reverse -%}
+{%- assign unranked = rows | where_exp: "r", "r.scop_35 == nil" -%}
+
+<div class="datatable-begin"></div>
+
+<table class="display" style="width:100%">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Make/Model</th>
+      <th>kW</th>
+      <th>SCOP@35&deg;C</th>
+      <th>SCOP@45&deg;C</th>
+      <th>SCOP@55&deg;C</th>
+      <th>Gas</th>
+      <th>Status</th>
+      <th>MCS Cert.</th>
+      <th>Sound Power (dBA)</th>
+      <th>Wall</th>
+      <th>Date Valid</th>
+      <th>Links</th>
+    </tr>
+  </thead>
+  <tbody>
+  {%- assign rank = 0 -%}
+  {%- for r in ranked -%}
+    {%- assign rank = rank | plus: 1 -%}
+    {%- include scop-row.html r=r rank=rank -%}
+  {%- endfor -%}
+  {%- for r in unranked -%}
+    {%- include scop-row.html r=r rank=0 -%}
+  {%- endfor -%}
+  </tbody>
+</table>
+
+<div class="datatable-end"></div>

@@ -1,0 +1,35 @@
+{%- comment -%}
+  Renders a single <tr> for the SCOP table. Params: r (a heat_pumps entry),
+  rank (integer; 0 = unranked). Kept separate from scop-table.html so the same
+  row markup can be reused by future per-band tables.
+
+  data-order attributes drive DataTables numeric sorting; unknown SCOP => -1 so
+  it always sorts last regardless of direction handling on the client.
+{%- endcomment -%}
+{%- assign r = include.r -%}
+{%- case r.validation -%}
+  {%- when "gem" -%}{%- assign badge = "&#128142;" -%}
+  {%- when "green_book" -%}{%- assign badge = "&#128215;" -%}
+  {%- when "orange_book" -%}{%- assign badge = "&#128216;" -%}
+  {%- else -%}{%- assign badge = "&#128148;" -%}
+{%- endcase -%}
+{%- case r.status -%}
+  {%- when "mcs" -%}{%- assign status_label = "MCS verified" -%}
+  {%- when "datasheet" -%}{%- assign status_label = "Datasheet only" -%}
+  {%- else -%}{%- assign status_label = "Rumoured / no data" -%}
+{%- endcase -%}
+    <tr>
+      <td data-order="{% if include.rank == 0 %}9999{% else %}{{ include.rank }}{% endif %}">{% if include.rank == 0 %}&ndash;{% else %}{{ include.rank }}{% endif %}</td>
+      <td>{{ r.manufacturer }} {{ r.model }}</td>
+      <td data-order="{{ r.output_kw | default: -1 }}">{% if r.output_kw %}{{ r.output_kw }}{% else %}?{% endif %}</td>
+      <td data-order="{{ r.scop_35 | default: -1 }}">{% if r.scop_35 %}{{ r.scop_35 }}{% else %}&mdash;{% endif %}</td>
+      <td data-order="{{ r.scop_45 | default: -1 }}">{% if r.scop_45 %}{% if r.scop_45_estimated %}<em title="Estimated as mean(35C,55C)">{{ r.scop_45 }}*</em>{% else %}{{ r.scop_45 }}{% endif %}{% else %}&mdash;{% endif %}</td>
+      <td data-order="{{ r.scop_55 | default: -1 }}">{% if r.scop_55 %}{{ r.scop_55 }}{% else %}&mdash;{% endif %}</td>
+      <td>{{ r.refrigerant }}</td>
+      <td data-search="{{ status_label }}"{% if r.comment %} title="{{ r.comment | escape }}"{% endif %}>{{ badge }} {{ status_label }}{% if r.datasheet_scop_35 %} <sup title="Datasheet claims {{ r.datasheet_scop_35 }}/{{ r.datasheet_scop_45 | default: '?' }}/{{ r.datasheet_scop_55 | default: '?' }} vs MCS">ds&#8800;</sup>{% endif %}</td>
+      <td>{% if r.mcs_cert %}<code>{{ r.mcs_cert }}</code>{% else %}&mdash;{% endif %}</td>
+      <td>{{ r.sound_power_dba | default: "&mdash;" }}</td>
+      <td data-search="{% if r.wall_mount == true %}wall{% elsif r.wall_mount == false %}floor{% else %}unknown{% endif %}">{% if r.wall_mount == true %}&#128077;{% elsif r.wall_mount == false %}&#10006;{% else %}?{% endif %}</td>
+      <td>{{ r.date_valid | default: "&mdash;" }}</td>
+      <td>{% if r.links.site %}<a href="{{ r.links.site }}" target="_blank" rel="noopener">site</a> {% endif %}{% if r.links.datasheet %}<a href="{{ r.links.datasheet }}" target="_blank" rel="noopener">datasheet</a> {% endif %}{% if r.links.brochure %}<a href="{{ r.links.brochure }}" target="_blank" rel="noopener">brochure</a> {% endif %}{% if r.links.mcs %}<a href="{{ r.links.mcs }}" target="_blank" rel="noopener">MCS</a>{% endif %}</td>
+    </tr>

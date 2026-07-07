@@ -6,3 +6,10 @@ _site
 Gemfile.lock
 node_modules
 vendor
+# Tooling artifacts
+tools/.mcs_cache.json
+links-report.md
+
+# Python
+__pycache__/
+*.pyc

@@ -8,6 +8,12 @@ datatable: true
 pinned: false
 ---
 
+---
+
+> **Update (2026):** A refreshed, filterable 5&ndash;6kW table driven from a clean dataset is now
+> maintained at [Comparison of 5-6kW Heat Pumps (2026)]({% post_url 2026-07-07-5-6kW Heat Pump SCOP %}).
+> This 2024 table is kept below for history.
+
 This is a comparison table of all 2024-2025 heat-pump datasheet figures for make+models I am aware of.
 
 Criteria:

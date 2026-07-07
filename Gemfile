@@ -11,6 +11,13 @@ source "https://rubygems.org"
 # To upgrade, run `bundle update github-pages`.
 gem "github-pages", group: :jekyll_plugins
 
+# Standard-library gems that Ruby unbundled from its default set (3.4 / 4.0+)
+# but which the older github-pages / jekyll 3.9 dependency tree still requires.
+gem "bigdecimal"
+gem "base64"
+gem "logger"
+gem "ostruct"
+
 # Jekyll plugins:
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
@@ -26,8 +33,12 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo-data"
 end
 
-# Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+# Performance-booster for watching directories on Windows.
+# NOTE: `wdm` 0.1.1 is unmaintained and does not build against Ruby 4.x
+# (rb_thread_call_without_gvl is no longer implicitly available). It is optional
+# — without it Jekyll falls back to polling for `--watch`. Re-add a compatible
+# release if one is published.
+# gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
