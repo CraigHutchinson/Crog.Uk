@@ -162,6 +162,31 @@
     mcs: null
   comment: "MCS overrides datasheet."
 
+- manufacturer: Vaillant
+  model: aroTHERM pro 5kW (VWL 55/7.1 A S2)
+  output_kw: 5
+  refrigerant: R290
+  scop_35: 4.86
+  scop_45: 4.22
+  scop_55: 3.58
+  scop_45_estimated: false
+  datasheet_scop_35: 5.01
+  datasheet_scop_45: null
+  datasheet_scop_55: 3.70
+  validation: orange_book
+  status: mcs
+  mcs_cert: "011-1W1212_01"
+  mcs_search: null  # aroTHERM pro not surfaced by MCS API (listed under "Vaillant Group UK Ltd" on the site)
+  sound_power_dba: null
+  wall_mount: null
+  date_valid: "2026-10"
+  links:
+    site: https://www.vaillant.com/en/products/arothermpro/
+    datasheet: https://www.vaillant.com/api/download/product/en/_arotherm-pro_794695.pdf
+    brochure: null
+    mcs: null
+  comment: "Compact R290 range, UK deliveries from 2026. MCS overrides datasheet (datasheet SCOP published for the S3 variant)."
+
 - manufacturer: Samsung
   model: Gen7 5kW
   output_kw: 5
@@ -183,6 +208,53 @@
     brochure: null
     mcs: null
   comment: "Datasheet matches MCS."
+
+- manufacturer: Vaillant
+  model: aroTHERM plus 5kW (VWL 55/8.1 A)
+  output_kw: 5
+  refrigerant: R290
+  scop_35: 4.83
+  scop_45: 4.24
+  scop_55: 3.65
+  scop_45_estimated: true
+  validation: broken_heart
+  status: datasheet
+  mcs_cert: null
+  mcs_search: null  # /8.1 generation not surfaced by MCS API
+  sound_power_dba: "44-55.6"
+  wall_mount: null
+  date_valid: "2025-09"
+  links:
+    site: https://www.vaillant.com/home/products/air-to-water-heat-pump-system-arotherm-plus-12096.html
+    datasheet: https://documents.unidomo.de/de/Energieeffizienz-Datenblatt/Vaillant/vaillant-datenblatt-vwl-55-8-1-a-230v.pdf
+    brochure: https://www.vaillant.de/api/download/product/de/flyer_produktinfo-arotherm-plus8.1_1429692.pdf
+    mcs: null
+  comment: "2026 aroTHERM plus generation (UK product code 8000049527). SCOP derived from ErP ns 190% (W35) / 143% (W55) as 2.5*(ns+3%)."
+
+- manufacturer: Viessmann
+  model: Vitocal 200-A ie 06
+  output_kw: 6
+  refrigerant: R290
+  scop_35: 4.79
+  scop_45: 4.09
+  scop_55: 3.71
+  scop_45_estimated: false
+  datasheet_scop_35: 5.13
+  datasheet_scop_45: null
+  datasheet_scop_55: 3.85
+  validation: orange_book
+  status: mcs
+  mcs_cert: "011-1W1300_01"
+  mcs_search: null  # Vitocal 200-A ie not surfaced by MCS API (listed under "Viessmann Ltd" on the site)
+  sound_power_dba: "48-56"
+  wall_mount: null
+  date_valid: "2026-10"
+  links:
+    site: https://www.viessmann.co.uk/en/products/heat-pump/vitocal-200-a-ie.html
+    datasheet: https://www.loebbeshop.de/media/80713/filemanager/TopTechnik-Vitocal-200-A-ie.pdf
+    brochure: https://www.viessmann.co.uk/content/dam/public-brands/gb/products/heat-pump/semper/Vitocal%20200-A%20ie%20Brochure.pdf/_jcr_content/renditions/original.media_file.download_attachment.file/Vitocal%20200-A%20ie%20Brochure.pdf
+    mcs: null
+  comment: "MCS overrides datasheet (datasheet SCOP derived from ErP ns 202% W35 / 151% W55)."
 
 - manufacturer: Stiebel Eltron
   model: WPL-A 07
@@ -354,7 +426,7 @@
   comment: "MCS overrides datasheet (large discrepancy)."
 
 - manufacturer: Vaillant
-  model: aroTHERM plus 5kW
+  model: aroTHERM plus 5kW (VWL 55/6 A)
   output_kw: 5
   refrigerant: R290
   scop_35: 4.48
@@ -373,7 +445,7 @@
     datasheet: https://professional.vaillant.co.uk/downloads/aproducts/renewables-1/arotherm-plus/arotherm-plus-spec-sheet-1892564.pdf
     brochure: null
     mcs: null
-  comment: "Current R290 aroTHERM plus range (VWL ../6 A); datasheet matches MCS."
+  comment: "Previous R290 aroTHERM plus generation (VWL ../6 A); datasheet matches MCS."
 
 - manufacturer: Daikin
   model: Altherma 4kW

@@ -2,7 +2,7 @@
 layout: post
 title:  "Comparison of 5-6kW Heat Pumps (2026)"
 date:   2026-07-07 09:00:00 +0000
-modified_date: 2026-07-07 09:00:00 +0000
+modified_date: 2026-10-09 09:00:00 +0000
 categories: HeatPump
 datatable: true
 pinned: true
@@ -55,6 +55,7 @@ Notes:
 
 ToDo / research backlog:
 
-- Vaillant aroTHERM plus 2025/26 (improved-spec model expected to reach the UK market in 2026).
+- Cross-check the ErP-derived SCOP for the Vaillant aroTHERM plus /8.1 against its MCS entry and
+  promote it from &#128148;.
 - Confirm SCOP + MCS certs for newly announced 2025/26 models and move them from
   `Rumoured / no data` up into a verified tier as figures are published.
