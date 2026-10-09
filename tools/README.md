@@ -37,9 +37,9 @@ python tools/fetch_mcs.py --search-keys
 Each dataset entry carries an `mcs_search` key — the token that finds its product
 line via the API `search` (e.g. `aroTHERM`, `Therma V`, `Ecodan`). `--search-keys`
 runs those searches and lists the candidate records (flagging an exact certificate
-match when present) so figures can be confirmed by hand. Five current models
-(EBac, Aira, Bosch, Ideal, Octopus) have `mcs_search: null` because the API does
-not surface them at all — verify those on the website. Extend keys in
+match when present) so figures can be confirmed by hand. Models with
+`mcs_search: null` are not surfaced by the API at all — verify those on the
+website. Extend keys in
 `_data/heat_pumps.yml` as new working tokens are found.
 
 `--reconcile` prints `[DIFF]` lines for any SCOP value that differs from MCS

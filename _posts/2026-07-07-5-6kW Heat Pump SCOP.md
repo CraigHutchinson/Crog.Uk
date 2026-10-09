@@ -28,6 +28,9 @@ Criteria / methodology (unchanged from the [2024 table]({% post_url 2024-02-15-5
 - Where a model has **no MCS certification**, published manufacturer/datasheet figures are used
   instead and flagged &#128148; (unverified). Note many manufacturers publish only **COP**, not the
   SCOP@35/45/55 trio, so some newly launched models show no SCOP until they are MCS-certified.
+- **Sound ErP** is the outdoor sound power on the EU energy label (EN 12102, rated conditions) and
+  is the like-for-like noise comparison. **Sound Max** is the manufacturer's stated maximum, which
+  many brands do not publish and whose test conditions vary, so compare it loosely.
 - A `*` on SCOP@45&deg;C means it was estimated as mean(35,55) because the datasheet omitted it
   (a conservative underestimate).
 

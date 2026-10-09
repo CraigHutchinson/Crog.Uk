@@ -40,7 +40,11 @@
 #                         token in the product Name only, so this is a line-level
 #                         key (e.g. "aroTHERM", "Therma V"); null means the model
 #                         is not currently surfaced by the API (verify manually).
-#   sound_power_dba       Sound power level (dBA), range allowed as string.
+#   sound_power_erp_dba   Outdoor sound power LWA (dBA) from the EU energy label /
+#                         ErP fiche (EN 12102, rated conditions). The like-for-like
+#                         noise comparison; never substitute a max figure here.
+#   sound_power_max_dba   Manufacturer's stated maximum outdoor sound power (dBA).
+#                         Test conditions are brand-specific, so compare loosely.
 #   wall_mount            true | false | null(unknown). Only true when the
 #                         datasheet explicitly states wall mounting.
 #   date_valid            Date the figures were captured/valid (YYYY-MM[-DD]).
@@ -49,7 +53,7 @@
 # =============================================================================
 
 - manufacturer: Lambda
-  model: 8kW
+  model: EU08L 8kW
   output_kw: 8
   refrigerant: R290
   scop_35: 5.66
@@ -59,12 +63,13 @@
   validation: broken_heart
   status: datasheet
   mcs_cert: null
-  sound_power_dba: "42-56"
+  sound_power_erp_dba: 42
+  sound_power_max_dba: 56
   wall_mount: false
   date_valid: "2024-12"
   links:
     site: https://www.lambda-wp.com/luft-waermepumpen/
-    datasheet: https://www.lambda-wp.com/fileadmin/userdaten/docs/downloads/eu-l_serie/DE_TEC-Datenblatt_EU35L_.pdf
+    datasheet: https://assets.heizung-billiger.de/documents/13070000-TechnischesDatenblatt.pdf  # EU08L dropped from Lambda's own downloads
     brochure: null
     mcs: null
   comment: "No MCS cert as of 2024-06."
@@ -80,12 +85,13 @@
   validation: broken_heart
   status: datasheet
   mcs_cert: null
-  sound_power_dba: "41-54.5"
+  sound_power_erp_dba: 41
+  sound_power_max_dba: 54.5
   wall_mount: false
   date_valid: "2024-07"
   links:
     site: https://www.ovum.at/en/produkte/luft-die-koenigsklasse/
-    datasheet: https://www.ovum.at/wp-content/uploads/2024/07/ACP_Datenblatt_alle_CI2024_web_240703.pdf
+    datasheet: https://web.archive.org/web/2024/https://www.ovum.at/wp-content/uploads/2024/07/ACP_Datenblatt_alle_CI2024_web_240703.pdf  # live URL now serves HTML
     brochure: null
     mcs: null
   comment: "No MCS cert as of 2024-06."
@@ -105,7 +111,8 @@
   status: mcs
   mcs_cert: "011-1W0831_04"
   mcs_search: "Therma V"
-  sound_power_dba: "48-49"
+  sound_power_erp_dba: 49
+  sound_power_max_dba: null
   wall_mount: false
   date_valid: "2024-01"
   links:
@@ -127,18 +134,19 @@
   status: mcs
   mcs_cert: "HP0369/01"
   mcs_search: null  # H1A05WG-GB not surfaced by MCS API (only ic-series present)
-  sound_power_dba: "64.5"
+  sound_power_erp_dba: null
+  sound_power_max_dba: null
   wall_mount: true
   date_valid: "2024-02"
   links:
     site: https://www.ebac.com/air-source-heat-pump
-    datasheet: null  # files.ebac.com unreachable; full spec + datasheet on the site page
+    datasheet: https://ebac.com/content/ebac_heatpump_datasheet.pdf
     brochure: null
     mcs: null
-  comment: "Datasheet matches MCS."
+  comment: "Datasheet matches MCS. Datasheet sound power 64.5 dBA (EN 12102) has no stated rating point, so it is in neither sound column."
 
 - manufacturer: Nibe
-  model: 6kW
+  model: F2050-6
   output_kw: 6
   refrigerant: R32
   scop_35: 4.87
@@ -152,7 +160,8 @@
   status: mcs
   mcs_cert: "012-C700141"
   mcs_search: "NIBE"
-  sound_power_dba: "53"
+  sound_power_erp_dba: 53
+  sound_power_max_dba: 62
   wall_mount: false
   date_valid: null
   links:
@@ -177,7 +186,8 @@
   status: mcs
   mcs_cert: "011-1W1212_01"
   mcs_search: null  # aroTHERM pro not surfaced by MCS API (listed under "Vaillant Group UK Ltd" on the site)
-  sound_power_dba: null
+  sound_power_erp_dba: 49
+  sound_power_max_dba: 57.7
   wall_mount: null
   date_valid: "2026-10"
   links:
@@ -199,7 +209,8 @@
   status: mcs
   mcs_cert: "011-1W0686_2"
   mcs_search: "AE050"  # returns Samsung ASHP line; confirm Gen7 R290 variant
-  sound_power_dba: "55"
+  sound_power_erp_dba: 55
+  sound_power_max_dba: null
   wall_mount: false
   date_valid: null
   links:
@@ -221,7 +232,8 @@
   status: datasheet
   mcs_cert: null
   mcs_search: null  # /8.1 generation not surfaced by MCS API
-  sound_power_dba: "44-55.6"
+  sound_power_erp_dba: 44
+  sound_power_max_dba: 55.6
   wall_mount: null
   date_valid: "2025-09"
   links:
@@ -246,7 +258,8 @@
   status: mcs
   mcs_cert: "011-1W1300_01"
   mcs_search: null  # Vitocal 200-A ie not surfaced by MCS API (listed under "Viessmann Ltd" on the site)
-  sound_power_dba: "48-56"
+  sound_power_erp_dba: 48
+  sound_power_max_dba: 56
   wall_mount: null
   date_valid: "2026-10"
   links:
@@ -271,7 +284,8 @@
   status: mcs
   mcs_cert: "011-1W0393_02"
   mcs_search: "WPL"
-  sound_power_dba: "48"
+  sound_power_erp_dba: 48
+  sound_power_max_dba: 59
   wall_mount: false
   date_valid: "2024"
   links:
@@ -293,7 +307,8 @@
   status: mcs
   mcs_cert: "HP0372/06"
   mcs_search: null  # Aira not surfaced by MCS API
-  sound_power_dba: "57"
+  sound_power_erp_dba: 57
+  sound_power_max_dba: null
   wall_mount: false
   date_valid: "2024-03"
   links:
@@ -315,7 +330,8 @@
   status: mcs
   mcs_cert: "HP0033/10"
   mcs_search: "Baxi"
-  sound_power_dba: "58"
+  sound_power_erp_dba: 58
+  sound_power_max_dba: null
   wall_mount: false
   date_valid: null
   links:
@@ -340,7 +356,8 @@
   status: mcs
   mcs_cert: "011-1W0590_06"
   mcs_search: "Vitocal"
-  sound_power_dba: "51"
+  sound_power_erp_dba: 51
+  sound_power_max_dba: 58
   wall_mount: true
   date_valid: null
   links:
@@ -365,7 +382,8 @@
   status: mcs
   mcs_cert: "HP0329/06"
   mcs_search: null  # CS5800iAW not surfaced by MCS API
-  sound_power_dba: "42"
+  sound_power_erp_dba: 42
+  sound_power_max_dba: 53
   wall_mount: false
   date_valid: null
   links:
@@ -390,12 +408,13 @@
   status: mcs
   mcs_cert: "037-0135-23-1"
   mcs_search: "Ecodan"  # returns Ecodan line; confirm R290 monobloc variant
-  sound_power_dba: null
+  sound_power_erp_dba: 53
+  sound_power_max_dba: null
   wall_mount: true
   date_valid: null
   links:
-    site: https://ultraquietecodan.co.uk/
-    datasheet: null
+    site: null  # ultraquietecodan.co.uk is now a parked domain
+    datasheet: https://library.mitsubishielectric.co.uk/pdf/download_full/4927
     brochure: null
     mcs: null
   comment: "MCS overrides datasheet."
@@ -415,7 +434,8 @@
   status: mcs
   mcs_cert: "KIWA 00027/023 HP"
   mcs_search: null  # Ideal Logic Air not surfaced by MCS API
-  sound_power_dba: "52"
+  sound_power_erp_dba: 52
+  sound_power_max_dba: null
   wall_mount: false
   date_valid: "2023-06"
   links:
@@ -437,7 +457,8 @@
   status: mcs
   mcs_cert: "KIWA 00016/018HP"
   mcs_search: "aroTHERM"  # returns aroTHERM line; confirm plus /6 variant
-  sound_power_dba: "51-55"
+  sound_power_erp_dba: 54
+  sound_power_max_dba: null
   wall_mount: true
   date_valid: null
   links:
@@ -462,7 +483,8 @@
   status: mcs
   mcs_cert: "011-1W0527_3"
   mcs_search: "Altherma"
-  sound_power_dba: "60"
+  sound_power_erp_dba: 58
+  sound_power_max_dba: null
   wall_mount: null
   date_valid: null
   links:
@@ -484,7 +506,8 @@
   status: mcs
   mcs_cert: "HP0255/03"
   mcs_search: null  # Octopus Cosy 6 not surfaced by MCS API
-  sound_power_dba: "53.8"
+  sound_power_erp_dba: 58
+  sound_power_max_dba: null
   wall_mount: false
   date_valid: "2024-05"
   links:
@@ -506,7 +529,8 @@
   status: mcs
   mcs_cert: "011-1W0921_6"
   mcs_search: "ecoAIR"
-  sound_power_dba: null
+  sound_power_erp_dba: 67
+  sound_power_max_dba: null
   wall_mount: false
   date_valid: "2024-10"
   links:
@@ -528,7 +552,8 @@
   status: rumoured
   mcs_cert: null
   mcs_search: "Aerona"
-  sound_power_dba: null
+  sound_power_erp_dba: 52
+  sound_power_max_dba: null
   wall_mount: false
   date_valid: null
   links:
@@ -539,7 +564,7 @@
   comment: "New R290 range; datasheet publishes COP (A7/W35 etc.) not SCOP@35/45/55, and no MCS SCOP surfaced yet - SCOP trio unavailable."
 
 - manufacturer: Panasonic
-  model: Aquarea R290 (5kW)
+  model: Aquarea L R290 5kW (WH-WDG05LE5)
   output_kw: 5
   refrigerant: R290
   scop_35: null
@@ -550,19 +575,20 @@
   status: rumoured
   mcs_cert: null
   mcs_search: "Aquarea"
-  sound_power_dba: null
+  sound_power_erp_dba: 52
+  sound_power_max_dba: null
   wall_mount: false
-  date_valid: null
+  date_valid: "2025"
   links:
-    site: https://www.aircon.panasonic.eu/GB_en/
+    site: https://www.aircon.panasonic.eu/GB_en/happening/aquarea-l-generation/
     datasheet: null
-    brochure: null
+    brochure: https://www.panasonicproclub.com/uploads/LT/catalogues/Aquarea_range_2025-2026.pdf
     mcs: null
-  comment: "R290 monobloc; SCOP to verify (not surfaced by MCS API)."
+  comment: "L-generation R290 outdoor unit, paired with a WH-ADC0509L3E5 / WH-SDC0509L3E5 indoor unit; SCOP to verify (not surfaced by MCS API)."
 
 - manufacturer: Warmflow
-  model: Zeno R290
-  output_kw: 6
+  model: Zeno R290 AS01 (3-9kW)
+  output_kw: 9
   refrigerant: R290
   scop_35: null
   scop_45: null
@@ -572,15 +598,16 @@
   status: rumoured
   mcs_cert: null
   mcs_search: "Zeno"
-  sound_power_dba: null
+  sound_power_erp_dba: 60
+  sound_power_max_dba: null
   wall_mount: false
   date_valid: null
   links:
     site: https://www.warmflow.co.uk/
-    datasheet: null
+    datasheet: https://warmflow.fra1.cdn.digitaloceanspaces.com/uploads/9009049-D-R290-ASHP-User-Manual.pdf
     brochure: null
     mcs: null
-  comment: "UK R290 monobloc range; SCOP to verify (not surfaced by MCS API)."
+  comment: "Smallest of the UK R290 monobloc range (AS01 3-9kW rated 9kW; AS02 5-15kW); no 6kW model. SCOP to verify (not surfaced by MCS API)."
 
 - manufacturer: CTC
   model: Ecoair 700M
@@ -593,7 +620,8 @@
   validation: broken_heart
   status: rumoured
   mcs_cert: null
-  sound_power_dba: "46"
+  sound_power_erp_dba: 46
+  sound_power_max_dba: null
   wall_mount: null
   date_valid: "2024-03"
   links:
@@ -614,7 +642,8 @@
   validation: broken_heart
   status: rumoured
   mcs_cert: null
-  sound_power_dba: "60"
+  sound_power_erp_dba: 60
+  sound_power_max_dba: null
   wall_mount: null
   date_valid: "2024-03"
   links:
