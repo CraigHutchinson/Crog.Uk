@@ -130,6 +130,34 @@ authenticated administrator access, so if a device is on a stable older build an
 urgency is mild. Worth weighing against the fact that several users reported instability on the
 [`4.4` build](https://community.zyxel.com/en/discussion/28374/issue-with-zyxel-wx3100-t0-firmware-5-50-abvl-4-4-c0).
 
+## The EX3301-T0 (same CDN, model code `ABVY`)
+
+The EX3301-T0 sits on the same download host with its own model folder and code:
+
+```
+https://download.zyxel.com/EX3301-T0/firmware/EX3301-T0_{VERSION}.zip
+```
+
+**Latest: `5.50(ABVY.7.2)C0`**, 31.5&nbsp;MB, published 14 July 2026:
+
+[`https://download.zyxel.com/EX3301-T0/firmware/EX3301-T0_5.50%28ABVY.7.2%29C0.zip`](https://download.zyxel.com/EX3301-T0/firmware/EX3301-T0_5.50%28ABVY.7.2%29C0.zip)
+
+The same build is also mirrored under the router-style `spdl` path, which dates to 28 April 2026, so
+the two schemes overlap for this model. Prefer the `download` host.
+
+| Version | Size | Published |
+| :------ | ---: | :-------- |
+| 5.50(ABVY.4)C0 | 27.9&nbsp;MB | 10 Apr 2026 |
+| 5.50(ABVY.6.2)C0 | 30.2&nbsp;MB | 10 Apr 2026 |
+| 5.50(ABVY.6.4)C0 | 30.6&nbsp;MB | 10 Apr 2026 |
+| 5.50(ABVY.7)C0 | 31.5&nbsp;MB | 10 Apr 2026 |
+| 5.50(ABVY.7.1)C0 | 31.5&nbsp;MB | 14 Jul 2026 |
+| **5.50(ABVY.7.2)C0** | **31.5&nbsp;MB** | **14 Jul 2026** |
+
+Confirmed **absent**: any `8.x` or `9.x` build, and the `ABVY.6` minors other than `6.2` and `6.4`.
+The search covered every `ABVY.6` to `ABVY.9` minor and sub-minor on both hosts, so a newer build
+would have to use a different naming scheme to be found this way.
+
 ## A note on OpenWrt
 
 There is no third-party route here. The
