@@ -19,15 +19,15 @@ records the URL scheme so the next person (or the next me) does not have to redi
 
 ## Latest firmware
 
-**V5.50(ABVL.5.1)C0** &mdash; 18.7&nbsp;MB, published 14 July 2026:
+**V5.50(ABVL.5.2)C0** &mdash; 18.9&nbsp;MB, published 29 September 2026:
 
-[`https://download.zyxel.com/WX3100-T0/firmware/WX3100-T0_5.50(ABVL.5.1)C0.zip`](https://download.zyxel.com/WX3100-T0/firmware/WX3100-T0_5.50%28ABVL.5.1%29C0.zip)
+[`https://download.zyxel.com/WX3100-T0/firmware/WX3100-T0_5.50%28ABVL.5.2%29C0.zip`](https://download.zyxel.com/WX3100-T0/firmware/WX3100-T0_5.50%28ABVL.5.2%29C0.zip)
 
-This is the ceiling, not merely the newest I happened to find: it matches the patch version named in
-Zyxel's advisory of
+This is the newest build found. The patch version named in Zyxel's advisory of
 [21 July 2026](https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-post-authentication-command-injection-vulnerability-in-certain-dsl-ethernet-cpe-fiber-onts-and-wireless-extenders-07-21-2026)
-(CVE-2026-6952, post-authentication command injection in the syslog `LogServer` field), which lists
-WX3100-T0 as affected at "5.50(ABVL.5)C0 and earlier".
+(CVE-2026-6952, post-authentication command injection in the syslog `LogServer` field) is `5.50(ABVL.5.1)C0`,
+which is still published and is the version the advisory cites. No advisory names `5.2` yet, so
+its purpose and whether it carries the CVE fix are unverified.
 
 ## The URL scheme
 
@@ -66,9 +66,10 @@ family. Mixing them up produces plausible-looking URLs that do not exist.
 | 5.50(ABVL.4.8)C0 | 18.3&nbsp;MB | 10 Apr 2026 |
 | 5.50(ABVL.4.9)C0 | 18.0&nbsp;MB | 10 Apr 2026 |
 | 5.50(ABVL.5)C0 | 18.9&nbsp;MB | 14 Jul 2026 |
-| **5.50(ABVL.5.1)C0** | **18.7&nbsp;MB** | **14 Jul 2026** |
+| 5.50(ABVL.5.1)C0 | 18.7&nbsp;MB | 14 Jul 2026 |
+| **5.50(ABVL.5.2)C0** | **18.9&nbsp;MB** | **29 Sep 2026** |
 
-Confirmed **absent**: `4.5`, `4.10`, `4.11`+, `5.2`+, `6.x`, any `5.70` build, and the `Y0` suffix
+Confirmed **absent**: `4.5`, `4.10`, `4.11`+, `5.3`+, `6.x`, any `5.70` build, and the `Y0` suffix
 variants. Two of those gaps matter:
 
 - The advisory of
@@ -120,8 +121,9 @@ never going to accept.
 **Mind the gap below 4.** Note the size cliff in the table: 15.8&nbsp;MB at `1.1` against
 17.6&nbsp;MB at `4`, with **no 2.x or 3.x build published at all**. That discontinuity suggests a
 platform change across the boundary. Upgrading from `0` or `1.1` may well work directly, but if
-`5.1` is rejected, stage it `1.1` &rarr; `4.7` &rarr; `5.1`. Devices already on the 4.x line go
-straight to `5.1` with no structural jump.
+`5.2` is rejected, stage it `1.1` &rarr; `4.7` &rarr; `5.2`. Devices already on the 4.x line go
+straight to `5.2` with no structural jump. If the advisory's `5.1` is required specifically, that
+build remains published and is the fallback.
 
 **Risk context.** WAN management is disabled by default on these units and CVE-2026-6952 requires
 authenticated administrator access, so if a device is on a stable older build and not exposed, the
